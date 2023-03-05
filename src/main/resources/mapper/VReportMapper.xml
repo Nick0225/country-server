@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.echo.country.mapper.VReportMapper">
+
+    <resultMap id="BaseResultMap" type="com.echo.country.pojo.Vreport">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="ico" column="ico" jdbcType="VARCHAR"/>
+        <result property="descb" column="desc" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="tel" column="tel" jdbcType="VARCHAR"/>
+        <result property="villageName" column="village_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+</mapper>

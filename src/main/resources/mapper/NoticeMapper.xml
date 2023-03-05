@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.echo.country.mapper.NoticeMapper">
+
+    <resultMap id="BaseResultMap" type="com.echo.country.pojo.Notice">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="img" column="img" jdbcType="VARCHAR"/>
+        <result property="descb" column="descb" jdbcType="VARCHAR"/>
+        <result property="institutions" column="institutions" jdbcType="VARCHAR"/>
+        <result property="views" column="views" jdbcType="INTEGER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="isdeleted" column="isdeleted" jdbcType="INTEGER"/>
+    </resultMap>
+
+
+</mapper>

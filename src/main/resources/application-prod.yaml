@@ -1,0 +1,19 @@
+server:
+  port: 8201
+spring:
+  #  数据源配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://36.134.80.177:3336/appdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    #    url: jdbc:mysql://101.132.153.67:3306/country2.0?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username:
+    password:
+
+    hikari:
+      pool-name: DateHikariCP
+      minimum-idle: 5
+      idle-timeout: 10000
+      maximum-pool-size: 10
+      max-lifetime: 1800000
+      connection-timeout: 3000
+      connection-test-query: SELECT 1

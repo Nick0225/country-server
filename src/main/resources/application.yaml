@@ -1,0 +1,49 @@
+spring:
+  profiles:
+    active: prod
+
+  servlet:
+    # 限制上传文件大小
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  redis:
+    host: 36.134.80.177
+    port: 6379
+    password: 202720
+
+#    #服务器地址
+#    host: 192.168.72.136
+#    port: 6379
+#    #数据库
+#    database: 0
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  #配置mybatis数据返回类型别名
+  type-aliases-package: com.echo.country.pojo
+  configuration:
+    # 自动驼峰命名
+    map-underscore-to-camel-case: true
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+logging:
+  level:
+    com.echo.country: info
+
+jwt:
+  # Jwt存储的请求头
+  tokenHeader: Authorization
+  # Jwt加密秘钥
+  secret: secret
+  # Jwt 的超期限时间（60*60）*24
+  expiration: 604800
+  # Jwt负载中拿到开头
+  tokenHead: Country
+
+

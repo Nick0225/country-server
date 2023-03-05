@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.echo.country.mapper.NoContactMapper">
+
+    <resultMap id="BaseResultMap" type="com.echo.country.pojo.NoContact">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="sex" column="sex" jdbcType="VARCHAR"/>
+        <result property="address" column="address" jdbcType="VARCHAR"/>
+        <result property="tel" column="tel" jdbcType="VARCHAR"/>
+        <result property="nation" column="nation" jdbcType="VARCHAR"/>
+        <result property="role" column="role" jdbcType="VARCHAR"/>
+        <result property="integralSize" column="integral_size" jdbcType="INTEGER"/>
+        <result property="countyName" column="county_name" jdbcType="VARCHAR"/>
+        <result property="townshipName" column="township_name" jdbcType="VARCHAR"/>
+        <result property="villageName" column="village_name" jdbcType="VARCHAR"/>
+        <result property="groupName" column="group_name" jdbcType="VARCHAR"/>
+        <result property="personId" column="person_id" jdbcType="VARCHAR"/>
+        <result property="tail" column="tail" jdbcType="VARCHAR"/>
+        <result property="isAccess" column="is_access" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,sex,
+        address,tel,nation,
+        role,integral_size,county_name,
+        township_name,village_name,group_name,
+        person_id,tail,is_access
+    </sql>
+</mapper>

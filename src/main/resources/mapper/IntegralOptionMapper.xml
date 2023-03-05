@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.echo.country.mapper.IntegralOptionMapper">
+
+    <resultMap id="BaseResultMap" type="com.echo.country.pojo.IntegralOption">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="options" column="options" jdbcType="INTEGER"/>
+        <result property="descb" column="descb" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="num" column="num" jdbcType="INTEGER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="integralId" column="integral_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+</mapper>
